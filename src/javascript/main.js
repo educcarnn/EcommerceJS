@@ -43,7 +43,7 @@ function postsMain(listPosts) {
             let blockInformation = document.getElementsByClassName('block-information')[0]
             let div = document.createElement('div')
             div.classList.add('block-price')
-           // div.classList.add('')
+         
                 let img = document.createElement('img')
                 img.src = e.target.parentElement.childNodes[0].src
                 img.classList.add('img-car')
