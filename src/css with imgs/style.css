@@ -1,0 +1,298 @@
+body {
+    font-family: 'inter', sans-serif;
+}
+h1 {
+    font-size: xx-large;
+    font-weight: 900;
+    margin: 13px 0px 1px 50px;
+}
+nav {
+    margin-top: -10px;
+}
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.itens li{
+    box-sizing: border-box;
+    border: 2px solid rgb(245, 245, 245);
+    width: 250px;
+    height: 390px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+} 
+.itens li img {
+    background-color: rgb(245, 245, 245);
+    width: 244px;
+    height: 160px;
+    margin: -19px;
+}
+/*.input-text::-webkit-input-placeholder{
+    color: #828282;
+    font-weight: 400;
+    font-size: 12px;
+    padding-left: 8px;
+}
+*/
+header {
+    padding: 2px;
+    background-color: #F5F5F5;
+    width: 1345px;
+    height: 55px;
+    margin-bottom: 30px;
+}
+.list {
+    display: flex;
+    margin: 52px 60px -34px 10px;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.name-list {
+    margin: -76px 10px;
+    color:#828282;
+    font-weight: 400;
+    font-size: 16px;
+    cursor:pointer;
+    max-height: 15px;
+}
+.search {
+    display: flex;
+    margin-top: -695px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.block-card {
+    display: flex;
+    margin: -700px 10px;
+    flex-direction: column;
+} 
+.block-information {
+    width: 301px;
+    height: 590px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.descrition-name-tittle{
+    line-height: 36px;
+    font-weight: 700;
+    font-size: 22px;
+}
+.descrition-name{ 
+    font-size: 16px;
+    font-weight: 400;
+}
+.aside{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;
+}
+.itens {
+    display: flex;
+    max-width: 969px;
+    max-height: 700px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+.category {
+    width: 98px;
+    height: 26px;
+    color: white;
+    background: #2E245E;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 15px 18px 0px -1px;
+    padding: 7px 19px 18px 17px;
+}
+.search input {
+    outline: none;
+    border: 0;
+    background: #F5F5F5;
+    width: 210px;
+    height: 44px;
+    margin-bottom: -48px;
+}
+.button-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 1247px;
+    margin-top: -10px;
+}
+.add-car{
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 500;
+}
+#car-name {
+    background:#6B54DE;
+    width: 300px;
+    height: 40px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.button-search {
+    background-color: #6B54DE;
+    border: 0;
+    height: 45px;
+    outline: none;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    cursor:pointer;
+}
+.price {
+    color: #2E245E;
+    font-size: 12px;
+    font-weight: 600;
+}
+.add-car:hover{
+    color: #6B54DE;
+}
+.itens li:hover{
+    border: 1px solid #6B54DE;
+}
+.name-list:hover{
+    color: black;
+}
+h2{
+    font-weight: 700;
+    font-size: 18px;
+}
+.text-between {
+    font-size: 12px;
+}
+
+
+/* Estilização DOM - CARRINHO*/
+.active{
+    display: none;
+}
+
+.block-information-dom{
+    width: 301px;
+    height: 400px;
+    background-color: rgb(245, 245, 245);
+    overflow: overlay;
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    place-content: space-around center;
+    align-items: center;
+    justify-content: start;
+}
+.remove-car{
+    border-bottom: 1px solid black;
+    width: 159px;
+    white-space: nowrap;
+}
+.remove-car:hover{
+    color: #6B54DE; 
+    border-bottom: 1px solid #6B54DE;
+    white-space: nowrap;
+}
+.itens-buy{
+    display: flex;
+    border: 1px solid;
+    flex-wrap: wrap;
+    width: 276px;
+    height: 69px;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-between;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.img-car{
+    margin: 14px 21px -88px -88px;
+    width: 79px;
+    height: 60px;
+    background-color: white;
+}
+.price-dom{
+    margin: 18px -8px -22px 2px;
+    color: #2E245E;
+    font-size: 12px;
+    font-weight: 600;
+}
+.title-product {
+    margin: 30px 20px -10px 1px;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 18px;
+}
+/* Barra do carrinho*/
+.quantity-price{
+    width: 299px;
+    height: 200px;
+    background-color: #333333;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* Block price*/
+.block-price{
+    display: flex;
+    width: 100px;
+    margin: 10px;
+    height: 90px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.text-price-remove{
+    margin: 27px 8px 12px 2px;
+    font-size: 12px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* Textos dos carrinhos*/
+#quantity, #price, #quantity-calcul, #quantity-price{
+    color: #ffff;
+}
+#quantity {
+    margin: -4px -6px 45px 20px;
+}
+#price {
+    margin: 52px 31px 13px -169px;
+}
+
+#quantity-calcul {
+    margin: -10px -83px 32px 88px;
+    color:#828282;
+}
+#total-price {
+    margin: 57px 11px 7px -60px;
+    color:#828282;
+}
+
+
