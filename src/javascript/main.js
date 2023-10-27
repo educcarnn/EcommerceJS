@@ -4,36 +4,35 @@ let quantidade = 0
 
     const descrition = document.getElementsByClassName('descrition-name-tittle')[0]
     const descrititonName = document.getElementsByClassName('descrition-name')[0]
-    // Criar carrinho vazio pelo dom
 
 function postsMain(listPosts) {
     const listOne = document.querySelector('.itens')
 
-    for (let i = 0; i < listPosts.length; i++) {
+    for (const element of listPosts) {
         const li = document.createElement('li');
         li.classList.add('all-elements')
 
         const image = document.createElement('img')
-        image.src = listPosts[i].img
+        image.src = element.img
 
         const category = document.createElement('span')
         category.classList.add('category')
-        category.innerText = listPosts[i].categorias
+        category.innerText = element.categorias
 
         const title = document.createElement('h2')
-        title.innerText = listPosts[i].titulo
+        title.innerText = element.titulo
 
         const text = document.createElement('p')
         text.classList.add('text-between')
-        text.innerText = listPosts[i].descricao
+        text.innerText = element.descricao
 
         const price = document.createElement('span')
         price.classList.add('price')
-        price.innerText = listPosts[i].preco
+        price.innerText = element.preco
 
         const addCar = document.createElement('p')
         addCar.classList.add('remove-car')
-        addCar.innerText = listPosts[i].adicionar
+        addCar.innerText = element.adicionar
         
 
         addCar.addEventListener('click', (e) => {

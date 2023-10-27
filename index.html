@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./src/css with imgs/reset.css">
-    <link rel="stylesheet" href="./src/css with imgs/style.css">
+    <link rel="stylesheet" href="./src/css with imgs/reset.css" />
+    <link rel="stylesheet" href="./src/css with imgs/style.css" />
     <title>E-commerce</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Weartake</h1>
-    </header>
-    <nav>
-        <ul class='list'>
-            <li class="name-list">Todos</li>
-            <li class='name-list'>Acessórios</li>
-            <li class="name-list">Calçados</li>
-            <li class="name-list">Camisetas</li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <ul class='itens'>
-           
-            </ul>
-        </section>
-        <aside class='button-card'>
-            <div class='search'>
-                <input class='input-text' type='text' placeholder='Digite aqui sua pesquisa'>
-                <button class='button-search'> Pesquisar</button>
-            </div>
-            <h3 id="car-name">Carrinho de compras</h3>
-           
-            <div class="block-information">
-                    <p class='descrition-name-tittle'>Carrinho vazio</p>
-                    <p class='descrition-name'>Adicione itens</p>
-              </div>
+       
+      <ul class="list">
         
-              <div id='block-dom'>
-            <!--
+        <li class="name-list">Todos</li>
+        <li class="name-list">Acessórios</li>
+        <li class="name-list">Calçados</li>
+        <li class="name-list">Camisetas</li>
+      </ul>
+    </header>
+
+    <main class="main">
+      <section>
+        <ul class="itens"></ul>
+      </section>
+      <aside class="button-card">
+        <div class="search">
+          <input
+            class="input-text"
+            type="text"
+            placeholder="Digite aqui sua pesquisa"
+          />
+          <button class="button-search">Pesquisar</button>
+        </div>
+        <h3 id="car-name">Carrinho de compras</h3>
+
+        <div class="block-information">
+          <p class="descrition-name-tittle">Carrinho vazio</p>
+          <p class="descrition-name">Adicione itens</p>
+        </div>
+
+        <div id="block-dom">
+          <!--
                     div class='quantity-price'
                         < p class=quantit price>
                -->
-            </div>
-         
-        
-        </aside>
+        </div>
+      </aside>
     </main>
-    <script src="./src/javascript/data.js"></script>
-    <script src='./src/javascript/main.js'></script>
-</body>
-
+    <script src="/src/javascript/data.js"></script>
+    <script src="/src/javascript/main.js"></script>
+  </body>
 </html>

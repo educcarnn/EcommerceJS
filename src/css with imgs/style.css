@@ -30,17 +30,11 @@ li {
     height: 160px;
     margin: -19px;
 }
-/*.input-text::-webkit-input-placeholder{
-    color: #828282;
-    font-weight: 400;
-    font-size: 12px;
-    padding-left: 8px;
-}
-*/
+
 header {
     padding: 2px;
     background-color: #F5F5F5;
-    width: 1345px;
+
     height: 55px;
     margin-bottom: 30px;
 }
@@ -50,18 +44,18 @@ header {
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
+    gap: 16%;
 }
 .name-list {
-    margin: -76px 10px;
+    
     color:#828282;
     font-weight: 400;
     font-size: 16px;
     cursor:pointer;
-    max-height: 15px;
 }
 .search {
     display: flex;
-    margin-top: -695px;
+
     justify-content: flex-end;
     flex-wrap: wrap;
 }
@@ -107,6 +101,10 @@ header {
     flex-direction: row;
     align-items: center;
 }
+.main{
+    display: flex;
+    gap: 10%;
+}
 .category {
     width: 98px;
     height: 26px;
@@ -133,8 +131,7 @@ header {
     align-content: flex-end;
     justify-content: space-evenly;
     align-items: center;
-    width: 1247px;
-    margin-top: -10px;
+
 }
 .add-car{
     text-decoration: underline;
